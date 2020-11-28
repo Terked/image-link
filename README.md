@@ -3,8 +3,13 @@ _Derived from [sound-link](https://github.com/superseva/sound-link) made by Happ
 # Journal Link
 Adds the ability to create journal buttons in your journals and items text areas that will show a journal.
 
-The link needs to be added in the HTML part of the text editor, looking like this:
-```<a class="journal_link" data-journalid="JOURNAL ID" data-journaltype="image" or "text">Journal name</a>```
+The link needs to be added in the HTML part of the text editor.
+
+**Image journal example**
+```<a class="journal_link" data-journalid="JOURNAL ID" data-journaltype="image">Journal name</a>```
+
+**Text journal example**
+```<a class="journal_link" data-journalid="JOURNAL ID" data-journaltype="text">Journal name</a>```
 
 # Dependencies
 - This module requires **The Furnace** module installed with **Advanced Macros *ON***.
