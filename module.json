@@ -2,7 +2,7 @@
   "name": "journal-link",
   "title": "Journal Link",
   "description": "Creates an journal button by adding a link in the HTML-part of the text editor that displays the image or text of a journal when clicked.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "minimumCoreVersion" : "0.6.0",
   "compatibleCoreVersion" : "0.6.6",
   "author": "Terked",
