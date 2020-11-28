@@ -33,15 +33,11 @@ function bindEvents() {
 
 function updateJournalDropdownOptions() {
     const journalDropdown = document.getElementById("journalDropdown")
-    const journalTypeDropdown = document.getElementById("journalTypeDropdown")
+    const journalType = document.getElementById("journalTypeDropdown").value
     const prevOptionsLength = journalDropdown.options.length
-
+    
     const journals = game.journal.entries.filter(journal => {
-        if (journalTypeDropdown.value == "image") {
-            return !!journal.data.img
-        } else {
-            return journal.data.image == null
-        }
+        return journalType == "image" ? !!journal.data.img : journal.data.img == undefined
     }).sort(compareJournalOptions)
 
     for (let journal of journals) {
@@ -78,7 +74,6 @@ function copyCodeToClipBoard(textArea) {
     textArea.select()
     document.execCommand("copy")
     ui.notifications.notify(`Code copied to clipboard`)
-
 }
 
 function clearSelection() {
