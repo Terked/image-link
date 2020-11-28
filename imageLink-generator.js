@@ -1,21 +1,9 @@
 function main() {
-    const imageJournals = game.journal.entries.filter(journal => !!journal.data.img)
-    let imageJournalOptions = ""
-    for (let journal of imageJournals) {
-        imageJournalOptions += `<option value=${journal.id}>${journal.data.name}</option>`
-    }
-
-    const textJournals = game.journal.entries.filter(journal => journal.data.image == null)
-    let textJournalOptions = ""
-    for (let journal of textJournals) {
-        textJournalOptions += `<option value=${journal.id}>${journal.data.name}</option>`
-    }
-
-    const template = `  
+    const dialogContent = `  
   <p>    
     Journal entry 
     <select id="journalDropdown">
-        ${imageJournalOptions}
+        // ${imageJournalOptions}
     </select>
     <select id="journalTypeDropdown">
        <option value="image">Image</option>
@@ -29,7 +17,7 @@ function main() {
     new Dialog({
         title: "Journal link generator",
         buttons: {},
-        content: template,
+        content: dialogContent,
         render: () => bindEvents(),
     }).render(true);
 }
