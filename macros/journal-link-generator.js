@@ -1,15 +1,8 @@
 function main() {
-    const imageJournals = game.journal.entries.filter(journal => !!journal.data.img)
-    let imageJournalOptions = ""
-    for (let journal of imageJournals) {
-        imageJournalOptions += `<option value=${journal.id}>${journal.data.name}</option>`
-    }
-
     const dialogContent = `  
   <p>    
     Journal entry 
     <select id="journalDropdown">
-        ${imageJournalOptions}
     </select>
     <select id="journalTypeDropdown">
        <option value="image">Image</option>
@@ -33,38 +26,35 @@ function bindEvents() {
     const journalTypeDropdown = document.getElementById("journalTypeDropdown")
 
     journalDropdown.addEventListener("change", updateValues)
-    journalTypeDropdown.addEventListener("change", replaceJournalDropdowns)
+    journalTypeDropdown.addEventListener("change", updateJournalDropdownOptions)
+
+    updateJournalDropdownOptions()
 }
 
-function replaceJournalDropdowns() {
+function updateJournalDropdownOptions() {
     const journalDropdown = document.getElementById("journalDropdown")
     const journalTypeDropdown = document.getElementById("journalTypeDropdown")
+    const prevOptionsLength = journalDropdown.options.length
 
-    if (journalTypeDropdown.value == "image") {
-        const length = journalDropdown.options.length
-        const imageJournals = game.journal.entries.filter(journal => !!journal.data.img)
-        for (let journal of imageJournals) {
-            const option = document.createElement("option")
-            option.value = journal.id
-            option.text = journal.data.name
-            journalDropdown.add(option)
+    const journals = game.journal.entries.filter(journal => {
+        if (journalTypeDropdown.value == "image") {
+            return !!journal.data.img
+        } else {
+            return journal.data.image == null
         }
-        for (let i = 0; i < length; i++) {
-            journalDropdown.remove(0)
-        }
-    } else {
-        const length = journalDropdown.options.length
-        const textJournals = game.journal.entries.filter(journal => journal.data.image == null)
-        for (let journal of textJournals) {
-            const option = document.createElement("option")
-            option.value = journal.id
-            option.text = journal.data.name
-            journalDropdown.add(option)
-        }
-        for (let i = 0; i < length; i++) {
-            journalDropdown.remove(0)
-        }
+    }).sort(compareJournalOptions)
+
+    for (let journal of journals) {
+        const option = document.createElement("option")
+        option.value = journal.id
+        option.text = journal.data.name
+        journalDropdown.add(option)
     }
+
+    for (let i = 0; i < prevOptionsLength; i++) {
+        journalDropdown.remove(0)
+    }
+
     updateValues()
 }
 
@@ -94,6 +84,16 @@ function copyCodeToClipBoard(textArea) {
 function clearSelection() {
     window.getSelection()?.removeAllRanges()
     document.selection?.empty()
+}
+
+function compareJournalOptions(journalA, journalB) {
+    if (journalA.data.name < journalB.data.name) {
+        return -1
+    }
+    if (journalA.data.name > journalB.data.name) {
+        return 1
+    }
+    return 0
 }
 
 main()
