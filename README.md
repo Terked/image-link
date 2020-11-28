@@ -12,8 +12,8 @@ The link needs to be added in the HTML part of the text editor, looking like thi
 
 # Macros to use with this module
 ## show-journal macro
-Create a new script macro called `show-journal` and [paste this code](show-journal.js).
+Create a new script macro called `show-journal` and [paste this code](macros/show-journal.js).
 
 ## Image link generation macro
-The macro below generates a link to an image journal based on your selection.
-See [image link generator macro ](imageLink-generator.js)
+The macro below generates a link to an image or text journal based on your selection.
+See [image link generator macro ](macros/journal-link-generator.js)
