@@ -15,12 +15,13 @@ The link needs to be added in the HTML part of the text editor.
 
 ## Macros to use with this module
 ### show-journal macro
-Create a new script macro called `show-journal` and [paste this code](macros/show-journal.js).
+The macro below will be called by this module.
+See [show-journal macro](macros/show-journal.js)
 
-### jounral-link-generator macro
+### journal-link-generator macro
 The macro below generates a link to an image or text journal based on your selection.
-See [image link generator macro ](macros/journal-link-generator.js)
+See [journal-link-generator macro ](macros/journal-link-generator.js)
 
-## Dependencies
+## Dependencies & requirements
 - This module requires **The Furnace** module installed with **Advanced Macros *enabled***.
-- You also need to create a `show-journal` macro in your game.
+- You need to create a `show-journal` macro in your game.
