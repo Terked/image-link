@@ -51,13 +51,14 @@ async function generateCode(html) {
             use: {
                 label: "Copy"
             }
+        },
+        render: html => {
+            const copyText = document.getElementById("moduleTextArea"); /* Get the text field */
+            copyText.select(); /* Select the text field */
+            document.execCommand("copy"); /* Copy the text inside the text field */
+            ui.notifications.notify(`Saved ${template} to clipboard`); /* Alert the copied text */
+            dialog.close()
         }
-    }).render(true)
-
-    const copyText = document.getElementById("moduleTextArea"); /* Get the text field */
-    copyText.select(); /* Select the text field */
-    document.execCommand("copy"); /* Copy the text inside the text field */
-    ui.notifications.notify(`Saved ${template} to clipboard`); /* Alert the copied text */
-
+    })
     dialog.close()
 }
