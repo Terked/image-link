@@ -1,4 +1,4 @@
-_Derived from [sound-link](https://github.com/superseva/sound-link) made by HappySteve_
+_Code derived from [sound-link](https://github.com/superseva/sound-link) made by [superseva](https://github.com/superseva/)_
 
 # Journal Link
 Adds the ability to create buttons in your journals to show other text or image journals to all players with one click.
