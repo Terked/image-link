@@ -22,8 +22,11 @@ _See [show-journal macro](macros/show-journal.js)._
 ### journal-link-generator macro
 This macro generates a pasteable link to a journal based on your selection.
 
-_See[journal-link-generator macro ](macros/journal-link-generator.js)_
+_See [journal-link-generator macro ](macros/journal-link-generator.js)_
 
 ## Dependencies & requirements
 - This module requires **The Furnace** module installed with **Advanced Macros *enabled***.
 - You need to create a `show-journal` macro in your game.
+
+# Demo
+![](demo/journal_link_demo.gif)
