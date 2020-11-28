@@ -12,7 +12,7 @@ Hooks.on("renderJournalSheet", (app, html, options) => {
 function searchJournalLinks (html){
     html.find('.journal_link').click((ev) => {
                     const element = ev.currentTarget;        
-                    const chatContent = `{{macro "toggle-journal" "` + element.dataset.journalid + `" "` +  element.dataset.journaltype + `"}}`;
+                    const chatContent = `{{macro "show-journal" "` + element.dataset.journalid + `" "` +  element.dataset.journaltype + `"}}`;
 	    			ChatMessage.create({content : chatContent});
             });
 }
