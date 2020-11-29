@@ -38,7 +38,7 @@ function updateJournalDropdownOptions() {
     
     const journals = game.journal.entries.filter(journal => {
         return journalType == "image" ? !!journal.data.img : journal.data.img == undefined
-    }).sort(compareJournalOptions)
+    }).sort(compareJournalOptions) 
 
     for (let journal of journals) {
         const option = document.createElement("option")

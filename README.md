@@ -24,7 +24,7 @@ _See [journal-link-generator macro ](macros/journal-link-generator.js)_.
 **Image journal example**
 
 ```<a class="journal_link" data-journalid="JOURNAL ID" data-journaltype="image">Journal name</a>```
-
+ 
 **Text journal example**
 
 ```<a class="journal_link" data-journalid="JOURNAL ID" data-journaltype="text">Journal name</a>```

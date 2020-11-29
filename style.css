@@ -7,7 +7,7 @@ a.journal_link {
   word-break: break-all;
 }
 .journal_link:before {
-    content: '\f144';
+    content: '\f144'; 
     font-family: 'Font Awesome 5 Free';
     padding-right: 4px;
   }

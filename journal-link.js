@@ -2,11 +2,11 @@
 // <a class="journal_link" data-journalid="JOURNAL ID" data-journaltype="image">Journal name</a>
 
 Hooks.on("renderItemSheet", (app, html, options) => {
-    searchJournalLinks(html);
+    searchJournalLinks(html)
 });
 
 Hooks.on("renderJournalSheet", (app, html, options) => {
-    searchJournalLinks(html);
+    searchJournalLinks(html)
 });
 
 function searchJournalLinks (html){
@@ -14,5 +14,5 @@ function searchJournalLinks (html){
                     const element = ev.currentTarget;        
                     const chatContent = `{{macro "show-journal" "` + element.dataset.journalid + `" "` +  element.dataset.journaltype + `"}}`;
 	    			ChatMessage.create({content : chatContent});
-            });
+            })
 }
