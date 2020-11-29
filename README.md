@@ -3,7 +3,7 @@ _Forked from [sound-link](https://github.com/superseva/sound-link) made by [supe
 # Journal Link
 Adds the ability to create buttons in your journals to show other text or image journals to all players with one click. 
 
-This basiaclly saves you _one precious click_ whenever you'd like to show your party an image without interrupting the flow of your narration.
+This basically saves you _one precious click_ whenever you'd like to show your party an image without interrupting the flow of your narration.
 
 The link needs to be added in the HTML part of the text editor. Use the `joural-link-generator` macro to create such links.
 
