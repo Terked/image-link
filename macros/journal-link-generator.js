@@ -73,7 +73,7 @@ function updateValues() {
 function copyCodeToClipBoard(textArea) {
     textArea.select()
     document.execCommand("copy")
-    ui.notifications.notify(`Code copied to clipboard`)
+    ui.notifications.notify(`Code copied to clipboard.`)
 }
 
 function clearSelection() {
