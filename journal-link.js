@@ -1,5 +1,5 @@
-// LINK EXAMPLE
-// <a class="sound_link" data-playlist="Music" data-sound="Song">My Song From the Music Playlist</a>
+// Link example
+// <a class="journal_link" data-journalid="JOURNAL ID" data-journaltype="image">Journal name</a>
 
 Hooks.on("renderItemSheet", (app, html, options) => {
     searchJournalLinks(html);
