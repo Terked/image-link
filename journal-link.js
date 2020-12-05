@@ -154,12 +154,13 @@ function showLinkGeneratorButton(app, html, data) {
             }
             if (!linkApp) {
                 linkApp = new JournalLink(app.entity, { submitOnClose: true, closeOnSubmit: false, submitOnUnfocus: true })
-            } else {
+            }
+            if (linkApp.rendered){
                 linkApp.bringToTop()
             }
             linkApp.render(true)
+            
         })
-
         html.closest('.app').find('.open-journal-link').remove()
         linkButton.insertAfter(html.closest('.app').find('.window-title'))
     }
