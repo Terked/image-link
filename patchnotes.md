@@ -1,2 +1,2 @@
-v0.1
-  - Added popup to paste link into selected journal entry
+v0.2
+  - Removed Furnace module and macro dependency

@@ -1,8 +1,8 @@
 {
   "name": "journal-link",
   "title": "Journal Link",
-  "description": "Creates an journal button by adding a link in the HTML-part of the text editor that displays the image or text of a journal when clicked.",
-  "version": "0.1",
+  "description": "Adds the ability for GMs to create buttons in journals to show other journals (texts, images) to players with one click.",
+  "version": "0.2",
   "author": "Terked",
   "scripts": [
     "./journal-link.js"
@@ -13,12 +13,6 @@
   "url": "https://github.com/terked/journal-link",
   "manifest": "https://raw.githubusercontent.com/terked/journal-link/master/module.json",
   "download": "https://github.com/terked/journal-link/archive/master.zip",
-  "minimumCoreVersion": "0.6.0",
-  "compatibleCoreVersion": "0.7.8",
-  "dependencies": [
-    {
-      "name": "furnace",
-      "manifest": "https://raw.githubusercontent.com/kakaroto/fvtt-module-furnace/master/module.json"
-    }
-  ]
+  "minimumCoreVersion": "0.7.0",
+  "compatibleCoreVersion": "0.7.8"
 }
