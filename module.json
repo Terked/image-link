@@ -2,21 +2,23 @@
   "name": "journal-link",
   "title": "Journal Link",
   "description": "Creates an journal button by adding a link in the HTML-part of the text editor that displays the image or text of a journal when clicked.",
-  "version": "0.0.5",
-  "minimumCoreVersion" : "0.6.0",
-  "compatibleCoreVersion" : "0.6.6",
+  "version": "0.1",
   "author": "Terked",
-  "esmodules": [], 
-  "scripts": ["journal-link.js"],
-  "styles": ["style.css"],
-  "packs": [],
-	"dependencies": [
-	{
-	  "name": "furnace",
-	  "manifest": "https://raw.githubusercontent.com/kakaroto/fvtt-module-furnace/master/module.json"
-	}],
-  "languages": [],
-	"url": "https://github.com/terked/journal-link",
+  "scripts": [
+    "./journal-link.js"
+  ],
+  "styles": [
+    "./style.css"
+  ],
+  "url": "https://github.com/terked/journal-link",
   "manifest": "https://raw.githubusercontent.com/terked/journal-link/master/module.json",
-   "download": "https://github.com/terked/journal-link/archive/master.zip"
+  "download": "https://github.com/terked/journal-link/archive/master.zip",
+  "minimumCoreVersion": "0.6.0",
+  "compatibleCoreVersion": "0.7.8",
+  "dependencies": [
+    {
+      "name": "furnace",
+      "manifest": "https://raw.githubusercontent.com/kakaroto/fvtt-module-furnace/master/module.json"
+    }
+  ]
 }

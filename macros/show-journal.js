@@ -1,4 +1,4 @@
-//Please make sure to set this script macro name to "show-journal"
+//Make sure to set this macro name to "show-journal" and type to "script"
 const entryId = args[0]
 const entry = game.journal.get(args[0])
 const mode = args[1]
