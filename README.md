@@ -15,4 +15,4 @@ Press the link icon in your journal to open the link generator. You can either c
 ![](demo/journal_link_demo.gif)
 
 # Credits
-_Inspired by [superseva](https://github.com/superseva/)'s [sound-link](https://github.com/superseva/sound-link) after I tried to figure out how to trigger a journal-embedded macro with parameters (which remains unsolved with this module as a handy workaround)._
+_Inspired by [superseva](https://github.com/superseva/)'s [sound-link](https://github.com/superseva/sound-link) after I tried to figure out how to trigger a journal-embedded macro with parameters (which remains an unsolved mystery and which spawned this module as a workaround)._
