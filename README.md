@@ -9,7 +9,7 @@ This basically saves you _one precious click_ whenever you'd like to show your p
 ## How to use
 Press the icon in your journal to open the link generator. You can either manually copy and paste the HTML into your journal or replace your current journal text selection by pressing the `Paste into journal` button.
 
-## `Paste into journal` limitations
+### "Paste into journal" button limitations
 - Can't be used while editing a journal with the build-in text editor
 - Can only replace unique texts
 
