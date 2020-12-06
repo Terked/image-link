@@ -1,6 +1,6 @@
 
 # Journal Link
-Adds the ability to create buttons in your journals that immediately show other text or image journals to all players.
+Adds the ability for GMs to create buttons in journals that immediately show other text or image journals to all players.
 
 As a GM this basically saves you _one precious click_ whenever you'd like to show your party a journal without interrupting the flow of your narration. Please note that the journal **will always be shown**, regardless of the viewer's permission for this journal.
 
