@@ -2,7 +2,7 @@
   "name": "journal-link",
   "title": "Journal Link",
   "description": "Create buttons in journals to show other journals to your players with one click.",
-  "version": "0.3",
+  "version": "1.0.0",
   "author": "Terked",
   "scripts": [
     "./journal-link.js"
