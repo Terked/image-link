@@ -1,7 +1,7 @@
 {
   "name": "journal-link",
   "title": "Journal Link",
-  "description": "Adds the ability for GMs to create buttons in journals to show other journals (texts, images) to players with one click.",
+  "description": "Create buttons in journals to show other journals to your players with one click.",
   "version": "0.3",
   "author": "Terked",
   "scripts": [
